@@ -1,0 +1,45 @@
+*hardmode.txt*  A training environment to eliminate bad habits.
+
+==============================================================================
+HARDMODE CONTROLS                                                   *hardmode*
+
+A minimalist training environment designed to help you break the habit of
+using arrow keys and force you to use standard Vim motions ('hjkl').
+
+==============================================================================
+USAGE                                                       *hardmode-usage*
+
+By default, the plugin starts in an inactive state. You can toggle the
+training environment on and off at any time using either the default
+keyboard shortcut or the built-in command.
+
+MAPPINGS ~
+
+,t                          Toggle Hardmode on or off in Normal mode.
+
+COMMANDS ~
+
+:ToggleHardMode             Toggle Hardmode on or off.
+
+==============================================================================
+FEATURES                                                 *hardmode-features*
+
+When Hardmode is ACTIVE:
+- The basic arrow keys (<Up>, <Down>, <Left>, <Right>) are fully locked
+  across Normal, Visual, and Insert modes.
+- Pressing a locked key triggers an error message: "Use hjkl!".
+- The keys return an empty string, preventing any cursor movement.
+
+When Hardmode is OFF:
+- All arrow keys resume their standard, native Vim behavior.
+
+==============================================================================
+VARIABLES                                               *hardmode-variables*
+
+g:hardmode_active                                         *g:hardmode_active*
+    A global flag indicating the current status of the training mode.
+    0 = Inactive / Off (Default)
+    1 = Active / On
+
+==============================================================================
+vim:tw=78:ts=8:ft=help:norl:
