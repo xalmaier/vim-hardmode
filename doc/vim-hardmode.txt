@@ -1,1 +1,1 @@
-*hardmode.txt*          hardmode, a plug-in for Vim             *vim-hardmode*
+*vim-hardmode.txt*          hardmode, a plug-in for Vim             *vim-hardmode*

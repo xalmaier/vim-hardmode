@@ -1,5 +1,5 @@
 " ============================================================================
-" Plugin:       hardmode
+" Plugin:       vim-hardmode
 " Description:  A training environment to eliminate bad habits.
 " ============================================================================
 
