@@ -1,10 +1,10 @@
 " ============================================================================
-" Plugin:       vim-hardmode
-" Description:  A training environment to eliminate bad habits.
+" Plugin:      hardmode
+" Description: A training environment to eliminate bad habits.
 " ============================================================================
 
 " Active flag (0 = Off, 1 = On)
-let g:hardmode_active = 1
+let g:hardmode_active = 0
 
 " Toggle mode with ',t'
 nnoremap <silent> ,t :ToggleHardMode<CR>
@@ -16,7 +16,6 @@ command! ToggleHardMode call s:ToggleHardMode()
 function! s:ToggleHardMode()
    if g:hardmode_active == 0
       let g:hardmode_active = 1
-      "echohl WarningMsg | echo "Hardmode ACTIVE! Arrow keys locked." | echohl None
       echohl ModeMsg
       echo "Hardmode ACTIVE! Arrow keys locked."
       echohl None
@@ -40,7 +39,7 @@ function! s:BlockArrows(arrow_key)
    endif
 endfunction
 
-" 1. Lock Basic Arrow Keys
+" Lock Basic Arrow Keys
 for t in ['<Up>', '<Down>', '<Left>', '<Right>']
    execute 'nnoremap <silent> <expr> ' . t . ' <SID>BlockArrows("' . t . '")'
    execute 'vnoremap <silent> <expr> ' . t . ' <SID>BlockArrows("' . t . '")'
