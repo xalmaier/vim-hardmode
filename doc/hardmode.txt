@@ -7,7 +7,7 @@ A minimalist training environment designed to help you break the habit of
 using arrow keys and force you to use standard Vim motions ('hjkl').
 
 ==============================================================================
-USAGE                                                       *hardmode-usage*
+USAGE                                                         *hardmode-usage*
 
 By default, the plugin starts in an inactive state. You can toggle the
 training environment on and off at any time using either the default
@@ -22,7 +22,7 @@ COMMANDS ~
 :ToggleHardMode             Toggle Hardmode on or off.
 
 ==============================================================================
-FEATURES                                                 *hardmode-features*
+FEATURES                                                   *hardmode-features*
 
 When Hardmode is ACTIVE:
 - The basic arrow keys (<Up>, <Down>, <Left>, <Right>) are fully locked
@@ -34,9 +34,9 @@ When Hardmode is OFF:
 - All arrow keys resume their standard, native Vim behavior.
 
 ==============================================================================
-VARIABLES                                               *hardmode-variables*
+VARIABLES                                                 *hardmode-variables*
 
-g:hardmode_active                                         *g:hardmode_active*
+g:hardmode_active                                          *g:hardmode_active*
     A global flag indicating the current status of the training mode.
     0 = Inactive / Off (Default)
     1 = Active / On
